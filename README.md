@@ -16,7 +16,7 @@ node index.js --token mytoken 'org:myorg created:2016-07-01..2017-07-01 sort:cre
 This module is installed via npm:
 
 ``` bash
-$ npm install -g github-search
+$ npm install -g github-search-repos-to-simple-text
 ```
 ## License
 

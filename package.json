@@ -1,5 +1,5 @@
 {
-  "name": "github-search",
+  "name": "github-search-repos-to-simple-text",
   "description": "Search github for issues/PRs using the github API, formatted as simple tabular output.",
   "version": "1.0.1",
   "author": "Tim Allen <tim@noblesamurai.com>",
