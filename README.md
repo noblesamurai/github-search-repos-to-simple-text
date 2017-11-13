@@ -3,30 +3,20 @@
 > Search github for issues/PRs using the github API, formatted as simple tabular output.
 
 ## Purpose
-- What problem does this module solve? At least a few sentences.
-PLEASE_FILL_IN_HERE
+Print github search of issues/PRs to a tab separated simple text output.
 
 ## Usage
 
-```js
-// Several examples of usage.
-// Usually copying and pasting code from the tests and making the code standalone suffices.
-// PLEASE_FILL_IN_HERE
 ```
-
-## API
-
-PLEASE_FILL_IN_HERE
-
-Note: To regenerate this section from the jsdoc run `npm run docs` and paste
-the output above.
+node index.js --token mytoken 'org:myorg created:2016-07-01..2017-07-01 sort:created-asc'
+```
 
 ## Installation
 
 This module is installed via npm:
 
 ``` bash
-$ npm install github-search
+$ npm install -g github-search
 ```
 ## License
 
