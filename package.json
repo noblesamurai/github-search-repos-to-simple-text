@@ -1,0 +1,46 @@
+{
+  "name": "github-search",
+  "description": "Search github for issues/PRs using the github API, formatted as simple tabular output.",
+  "version": "1.0.0",
+  "author": "Tim Allen <tim@noblesamurai.com>",
+  "license": "BSD",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc -a -c -r html -r text -r lcov npm test",
+    "pretest": "semistandard --env mocha",
+    "test": "mocha --recursive test",
+    "watch": "mocha --recursive --watch test",
+    "docs": "jsdoc2md index.js"
+  },
+  "homepage": "https://github.com/noblesamurai/github-search",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/noblesamurai/github-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noblesamurai/github-search/issues"
+  },
+  "engines": {
+    "node": "6.x",
+    "npm": "3.x"
+  },
+  "dependencies": {
+    "args": "^3.0.7",
+    "github": "^12.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "dirty-chai": "^1.2.2",
+    "mocha": "~3.3.0",
+    "nyc": "^10.1.2",
+    "semistandard": "*",
+    "jsdoc-to-markdown": "~3.0.0"
+  },
+  "keywords": [],
+  "nyc": {
+    "exclude": [
+      "coverage",
+      "test"
+    ]
+  }
+}
