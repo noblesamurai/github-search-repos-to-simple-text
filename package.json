@@ -1,7 +1,7 @@
 {
   "name": "github-search",
   "description": "Search github for issues/PRs using the github API, formatted as simple tabular output.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Tim Allen <tim@noblesamurai.com>",
   "license": "BSD",
   "main": "index.js",
