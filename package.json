@@ -31,9 +31,9 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "dirty-chai": "^1.2.2",
-    "jsdoc-to-markdown": "~3.0.0",
+    "jsdoc-to-markdown": "^4.0.1",
     "mocha": "^5.2.0",
-    "nyc": "^10.1.2",
+    "nyc": "^13.0.1",
     "semistandard": "*"
   },
   "keywords": [],
