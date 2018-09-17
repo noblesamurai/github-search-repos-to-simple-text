@@ -12,9 +12,9 @@ github.authenticate({
   token: flags.token
 });
 
-function pick(key, dflt = '') {
+function pick (key, dflt = '') {
   const path = key.split('.');
-  return function(haystack) {
+  return function (haystack) {
     let ret = haystack;
     for (let key of path) {
       if (!(key in ret)) {
@@ -28,10 +28,10 @@ function pick(key, dflt = '') {
 }
 
 function clean (col) {
-  return  '"' + String(col).replace('"', '""') + '"';
+  return '"' + String(col).replace('"', '""') + '"';
 }
 
-function buildItem2Row(cols, dflt='') {
+function buildItem2Row (cols, dflt = '') {
   let trans = cols.map((key) => pick(key));
   let transFn = (item) => trans.map((fn) => clean(fn(item))).join('\t');
   return transFn;
