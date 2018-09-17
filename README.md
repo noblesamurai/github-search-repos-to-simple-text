@@ -7,9 +7,18 @@ Print github search of issues/PRs to a tab separated simple text output.
 
 ## Usage
 
+### Find Issues
+
+``` bash
+node index.js --token MYTOKEN 'is:pr org:myorg created:2017-07-01..2018-07-01 sort:created-asc'
 ```
-node index.js --token mytoken 'org:myorg created:2016-07-01..2017-07-01 sort:created-asc'
+
+### Find Commits
+
+``` bash
+node index.js --commits --token MYTOKEN 'committer-date:2017-07-01..2018-07-01 sort:commiter-date-asc repo:myorg/myrepo'
 ```
+
 
 ## Installation
 
